@@ -2,7 +2,7 @@
 
 Basic Blog Post with Automated testing Rspec
 
-## Gem for test&development
+## Gems for test&development
 
 ```ruby
   gem 'rspec-rails', '~> 3.5'
@@ -10,4 +10,3 @@ Basic Blog Post with Automated testing Rspec
   gem 'factory_girl_rails', '~> 4.7'
   ```
 
-  
