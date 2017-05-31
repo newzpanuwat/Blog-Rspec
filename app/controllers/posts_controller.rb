@@ -1,4 +1,10 @@
 class PostsController < ApplicationController
+    
+    def index
+        @post = Post.all
+    end
+
+
     def new
         @post = Post.new
     end
@@ -16,6 +22,9 @@ class PostsController < ApplicationController
         @post = Post.find(params[:id])
     end
 
+    def destroy
+        
+    end
 
     private
     def post_params
