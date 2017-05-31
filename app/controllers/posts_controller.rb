@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
-    
+   
     def index
-        @post = Post.all
+        @posts = Post.all
     end
 
 
@@ -12,11 +12,16 @@ class PostsController < ApplicationController
     def create
         @post = Post.new(post_params)
         if @post.save
-            redirect_to @post
+           flash[:notice] = "Successfully created post!"
+            redirect_to post_path(@post) 
+     
         else
-            render 'new'
+           flash[:alert] = "Error creating new post!"
+            render :new
+      
         end
     end
+    
 
     def show
         @post = Post.find(params[:id])
@@ -27,7 +32,8 @@ class PostsController < ApplicationController
     end
 
     private
+
     def post_params
-        params.require(:post).permit(:body, :title)
+        params.require(:post).permit(:title, :body)
     end
 end

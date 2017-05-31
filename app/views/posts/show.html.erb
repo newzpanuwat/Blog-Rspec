@@ -1,2 +1,10 @@
-<%= @post.title %>
-<%= @post.body %>
+
+<h1>Show data</h2>
+
+<strong> Title: </strong><%= @post.title %><br />
+<strong> Content: </strong><%= @post.body %><br />
+<strong> Created at: </strong><%= @post.created_at %><br />
+<strong> Created at: </strong><%= @post.updated_at %><br />
+
+<br>
+<%= link_to 'Back', posts_path %>

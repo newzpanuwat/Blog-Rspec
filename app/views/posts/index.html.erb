@@ -1,0 +1,13 @@
+<h1>Post</h1>
+
+<% @posts.each do |post| %>
+<strong>Id: </strong><%= post.id %> <br />
+<strong>Title: </strong><%= post.title %> <br />
+<strong>Body: </strong><%= post.body %> <br />
+<strong> Created at: </strong> <%= post.created_at %><br /> |  <%= link_to 'show', post %><br />  
+
+<hr>
+<% end %>
+<br>
+
+<%= link_to 'Add post', new_post_path %>
