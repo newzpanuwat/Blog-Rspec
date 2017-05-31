@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Basic Blog Post with Automated testing Rspec
 
-Things you may want to cover:
+## Gem for test&development
 
-* Ruby version
+```ruby
+  gem 'rspec-rails', '~> 3.5'
+  gem 'capybara', '~> 2.7'
+  gem 'factory_girl_rails', '~> 4.7'
+  ```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  
